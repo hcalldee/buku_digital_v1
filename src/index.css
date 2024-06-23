@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.bg-app-carmine-pink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 79 77 / var(--tw-bg-opacity));
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.w-full {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  /* font-family: 'Fredoka One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 16px; /* Ukuran font default */
+}
+button {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+}
+
+/* Mengatur font-family global */
+/* body {
+} */
+
+/* Aturan tambahan jika diperlukan */
+h1 {
+  font-size: 1rem; /* Contoh: Ukuran font untuk heading level 1 */
+}
+
+p {
+  font-size: 1rem; /* Contoh: Ukuran font untuk paragraf */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
