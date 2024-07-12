@@ -93,6 +93,8 @@ export const UsageInstruction = () => {
 									<li className="list-item">Next – tombol untuk beralih ke halaman buku selanjutnya</li>
 									<li className="list-item">Jeda – tombol untuk menghentikan bacaan sejenak</li>
 									<li className="list-item">Play – tombol untuk memulai bacaan</li>
+									<li className="list-item">Hide – tombol untuk menghilangkan tombol jeda dan ulangi</li>
+									<li className="list-item">Show – tombol untuk menampilkan tombol jeda dan ulangi</li>
 								</ol>
 							</li>
 							<li>Selamat Membaca.</li>
