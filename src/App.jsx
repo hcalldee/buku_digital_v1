@@ -73,7 +73,7 @@ function App() {
 			<Background />
 			<ToastContainer />
 
-			{/* <div className="container h-full max-w-screen-xl mx-0"> */}
+			{/* <div className="container h-full max-w-screen-xl mx-auto"> */}
 			<div className="container h-full max-w-screen-xl">
 				<AnimatePresence mode="wait">
 					<Routes location={location} key={pathname}>
