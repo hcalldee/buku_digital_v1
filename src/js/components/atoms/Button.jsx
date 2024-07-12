@@ -5,7 +5,8 @@ import React from 'react';
 export const Button = ({ icon, label, size, children, className, ...props }) => {
 	return (
 		<Fade>
-			<button
+			<button 
+				style={{ backgroundColor: '#cb5437', color: 'white' }}
 				className={clsx([
 					'flex gap-4 text-center justify-center items-center text-white transition-all origin-center transform cursor-pointer bg-app-carmine-pink active:scale-100 hover:scale-105 rounded-md',
 					size === 'sm' && 'px-3 py-2 text-sm',

@@ -4,13 +4,19 @@ import { useAppStore } from '../../store/store';
 import { Fade } from '../../transitions/Fade/Fade';
 import React, { useEffect, useRef, useState } from 'react';
 import { toggleFullScreen } from '../../utils/helpers';
+import { READING_MODE } from '../../utils/constants';
 
 export const SplashScreen = () => {
 	const navigate = useNavigate();
 
 	const openingRef = useRef(null);
 
-	const { showSplashScreen } = useAppStore();
+	const { showSplashScreen,setReadingMode } = useAppStore();
+
+	const handleOpenBook = (readingMode) => {
+		setReadingMode(readingMode);
+		navigate('/book');
+	};
 
 	const [isPlay, setIsPlay] = useState(false);
 
@@ -29,13 +35,22 @@ export const SplashScreen = () => {
 	}, [navigate, showSplashScreen]);
 
 	return (
-		<Fade className="flex flex-col items-center justify-center w-full h-screen gap-8 rounded-lg md:flex-row">
+		<div className="h-screen w-full flex items-center justify-center">
+		  <Fade className="flex flex-col items-center justify-center w-full h-full gap-8 rounded-lg md:flex-row">
 			<audio ref={openingRef} src={require('../../../assets/opening.wav')} onEnded={handleEnded} />
-
-			<div className="flex flex-col items-center justify-center w-9/12 gap-6 md:w-6/12 lg:w-5/12">
-				<img className="z-0 w-full mx-auto rounded-lg shadow-xl" src={require('../../../assets/cover.jpg')} alt="" />
-				{!isPlay && <ButtonIcon className="w-20" icon={require('../../../assets/start.png')} onClick={handleStart} />}
+	
+			<div className="flex flex-col items-center justify-center w-full h-full">
+			  <img className="z-0 w-full h-full object-cover rounded-lg shadow-xl" src={require('../../../assets/cover.jpg')} alt="" />
+			  {!isPlay && (
+				<ButtonIcon
+				  className="absolute w-20"
+				  icon={require('../../../assets/start.png')}
+				  onClick={() => handleOpenBook(READING_MODE.READ_ALOUD)}
+				  style={{ top: '90%', left: '50%', transform: 'translate(-50%, -50%)' }} // Center the button icon
+				/>
+			  )}
 			</div>
-		</Fade>
-	);
+		  </Fade>
+		</div>
+	  );
 };

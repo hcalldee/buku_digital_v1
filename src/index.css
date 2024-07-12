@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  max-width: 1380px;
+}
 
+.max-w-screen-xl {
+  max-width: 1380px;
+}
 
 .bg-app-carmine-pink {
   --tw-bg-opacity: 1;
