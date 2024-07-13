@@ -51,8 +51,8 @@ export const ButtonBacksound = () => {
 
 				<div className="text-sm text-center">
 					<ButtonIcon
-						icon={require('../../../assets/tesmusik.png')}
-						className={clsx('w-8 md:w-9 lg:w-10', !IS_MUSIC_ON && 'opacity-50')}
+						icon={IS_MUSIC_ON ? require('../../../assets/tesmusikon.png') : require('../../../assets/tesmusikoff.png') }
+						className={IS_MUSIC_ON ? clsx('w-8 md:w-9 lg:w-10') : clsx('w-8 md:w-9 lg:w-6')}
 						onClick={toggleBacksound}
 					/>
 					<div>{IS_MUSIC_ON ? 'ON' : 'OFF'}</div>

@@ -40,9 +40,11 @@ export const UsageInstruction = () => {
 				<div className="space-y-6">
 					<div className="space-y-3 leading-relaxed text-justify">
 						<p>
-							Buku cerita “Pensil Baru Habil” merupakan buku cerita yang diperuntukkan sebagai bahan bacaan pendukung
-							dalam pembelajaran membaca. Tujuan penggunaan bahan bacaan pendukung ini untuk membantu siswa dan siswi
-							dalam melatih kemampuan membaca nyaring.
+						 Media ini dibuat untuk penambah bacaan pendukung peserta didik dalam
+						 pembelajaran energi dan perubahannya. Tujuan penggunaan media ini untuk
+						 membantu peserta didik dalam meningkatkan pemahaman pada materi energi dan
+						 perubahannya. Media audiovisual ini menggunakan model pembelajaran Problem
+						 Based Learning.
 						</p>
 					</div>
 				</div>
@@ -53,10 +55,11 @@ export const UsageInstruction = () => {
 					<div className="space-y-3 leading-relaxed text-justify">
 						<h2 className="font-semibold">Bagi Orang Tua dan Pendidik</h2>
 						<p>
-							Buku digital “Pensil Baru Habil” adalah bahan bacaan pendukung dalam pembelajaran membaca nyaring.
-							Penggunaan buku digital ini membutuhkan perangkat elektronik serta tersedianya jaringan internet.
-							Penggunaan buku digital dalam kegiatan pembelajaran dapat dilaksanakan secara mandiri ataupun bersama-sama
-							di dalam kelas.
+							Media audiovisual “Energi di sekitarku” adalah media pendukung dalam
+							 pembelajaran energi dan perubahannya. Penggunaan media ini membutuhkan 
+							 perangkat elektronik serta tersedianya jaringan internet. Penggunaan media
+							 audiovisual ini dalam kegiatan pembelajaran dapat dilaksanakan secara mandiri
+							 maupun bersama-sama di dalam kelas.
 						</p>
 						<p>
 							Penggunaan buku digital secara mandiri dapat melalui perangkat elektronik seperti, smartphone, laptop,
@@ -90,6 +93,8 @@ export const UsageInstruction = () => {
 									<li className="list-item">Next – tombol untuk beralih ke halaman buku selanjutnya</li>
 									<li className="list-item">Jeda – tombol untuk menghentikan bacaan sejenak</li>
 									<li className="list-item">Play – tombol untuk memulai bacaan</li>
+									<li className="list-item">Hide – tombol untuk menghilangkan tombol jeda dan ulangi</li>
+									<li className="list-item">Show – tombol untuk menampilkan tombol jeda dan ulangi</li>
 								</ol>
 							</li>
 							<li>Selamat Membaca.</li>

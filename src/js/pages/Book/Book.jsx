@@ -164,6 +164,7 @@ export const Book = () => {
 						Sebelumnya
 					</Tooltip>
 					{IS_READ_ALOUD && (
+						//play pause
 						<div className="flex gap-4">
 							<ButtonIcon
 								id="buttonPlayPause"
@@ -196,8 +197,8 @@ export const Book = () => {
 						id="buttonNext"
 						icon={require('../../../assets/previous right.png')}
 						className={clsx('w-10 md:w-11 lg:w-12')}
-						onClick={handleGoToNextPage}
-						disabled={IS_READ_ALOUD && page === totalPage - 1}
+						onClick={page === totalPage ? navigate('/book/finish') :handleGoToNextPage}
+						// disabled={IS_READ_ALOUD && page === totalPage - 1}
 					/>
 					<Tooltip anchorSelect="#buttonNext" place="top">
 						Berikutnya
