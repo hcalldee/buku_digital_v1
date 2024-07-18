@@ -1,6 +1,6 @@
 import './App.css';
 import backgroundImage from './assets/tesbg.jpg';
-import logo from './assets/teslogo.png';
+import logo from './assets/teslogo2123.png';
 import btnPengguna from './assets/tesbtnpengguna.png';
 import btnMusik from './assets/tesmusik.png';
 // import audio from './assets/tes_audio.mp3';
