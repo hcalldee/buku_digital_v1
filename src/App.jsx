@@ -74,7 +74,7 @@ function App() {
 			<ToastContainer />
 
 			{/* <div className="container h-full max-w-screen-xl mx-auto"> */}
-			<div className="container h-full max-w-screen-xl">
+			<div className="container h-full max-w-screen-xl mx-auto">
 				<AnimatePresence mode="wait">
 					<Routes location={location} key={pathname}>
 						{/* <Route path="/" exact element={<MainMenu />} /> */}
