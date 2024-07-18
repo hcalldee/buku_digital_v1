@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 require("./App.css");
 var _tesbg = _interopRequireDefault(require("./assets/tesbg.jpg"));
-var _teslogo = _interopRequireDefault(require("./assets/teslogo.png"));
+var _teslogo = _interopRequireDefault(require("./assets/teslogo2123.png"));
 var _tesbtnpengguna = _interopRequireDefault(require("./assets/tesbtnpengguna.png"));
 var _tesmusik = _interopRequireDefault(require("./assets/tesmusik.png"));
 var _reactHelmet = require("react-helmet");
