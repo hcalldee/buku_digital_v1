@@ -94,7 +94,7 @@ function App() {
 
 			{!IS_AT_SPLASH && (
 				<div className="absolute flex items-start gap-4 top-5 left-8">
-					{!IS_AT_HOME && !IS_AT_QUIZ && !showSplashScreen && !IS_AT_SPLASH && <ButtonGoHome />}
+					{!IS_AT_HOME && !IS_AT_QUIZ && !showSplashScreen && !IS_AT_SPLASH && !AT_AUTHOR && !AT_FINISH && <ButtonGoHome />}
 					{IS_AT_HOME && (
 						<Button icon={require('./assets/tesbtnpengguna.png')} size="sm" onClick={() => navigate('/usage-instruction')}>
 							Petunjuk Penggunaan
